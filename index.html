@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benefactor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b5a3e2d585.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<div id="loading-screen">
+    <div class="logo-icon"></div>
+    <div class="loading-bar">
+      <div class="loading-bar-inner"></div>
+    </div>
+  </div>
+	<main>
+	<nav class="navbar navbar-expand-lg navbar-dark shadow">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="index.html">Benefactor</a><img class="benelogo" src="assets/benefactor.svg" alt="" />  
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ms-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Categories
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			  <li><a class="dropdown-item" href="coupe.html">Coupe</a></li>
+			  <li><a class="dropdown-item" href="off-road.html">Off-Road</a></li>
+			  <li><a class="dropdown-item" href="sedan.html">Sedan</a></li>
+			  <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+			  <li><a class="dropdown-item" href="sport-classic.html">Sport Classic</a></li>
+			  <li><a class="dropdown-item" href="super.html">Super</a></li>
+			  <li><a class="dropdown-item" href="suv.html">SUV</a></li>
+			  <li><a class="dropdown-item" href="compact.html">Compact</a></li>
+			  <li><a class="dropdown-item" href="van.html">Van</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contactus.html">Contact Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="employees.html">Employees</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+	<header class="hero">
+		<div class="hero-bg">
+			<img src="assets/dealer.png" alt="" />
+		</div>
+	  <div class="hero-image">
+		<img src="assets/benefactor.png" alt="" />
+	  </div>
+		  <div class="hero-text">Welcome to Benefactor</div>
+			  <a data-scroll href="#categories">
+				<div class="arrow"></div>
+			  </a>
+
+	</header>
+	<div class="colorfill py-5">Drive with us into the future.</div>
+
+  <div class="container py-5" id="categories">
+	<h2 class="text-center mb-4">Our Vehicle Categories</h2>
+	<div class="row text-center">
+	  <div class="col-md-4"><a href="coupe.html"><div class="card category-card p-4" id="coupe"><span class="button-text">Coupe</span></div></a></div>
+	  <div class="col-md-4"><a href="off-road.html"><div class="card category-card p-4" id="off-road"><span class="button-text">Off-Road</span></div></a></div>
+	  <div class="col-md-4"><a href="sedan.html"><div class="card category-card p-4" id="sedan"><span class="button-text">Sedan</span></div></a></div>
+	  <div class="col-md-4"><a href="sport.html"><div class="card category-card p-4" id="sport"><span class="button-text">Sport</span></div></a></div> 
+	  <div class="col-md-4"><a href="sport-classic.html"><div class="card category-card p-4" id="sport-classic"><span class="button-text">Sport Classic</span></div></a></div>
+	  <div class="col-md-4"><a href="super.html"><div class="card category-card p-4" id="super"><span class="button-text">Super</span></div></a></div>
+	  <div class="col-md-4"><a href="suv.html"><div class="card category-card p-4" id="suv"><span class="button-text">SUV</span></div></a></div>
+	  <div class="col-md-4"><a href="compact.html"><div class="card category-card p-4" id="compact"><span class="button-text">Compact</span></div></a></div>
+	  <div class="col-md-4"><a href="van.html"><div class="card category-card p-4" id="van"><span class="button-text">Van</span></div></a></div>
+	</div>
+  </div>
+
+  <div class="container py-5">	  
+	<h2 class="text-center mb-4">Featured Stock</h2>
+	<div class="row">
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+		  <img src="assets/sedan/beneham.png" class="card-img-top mb-3" alt="Elegance" />
+		  <h5 class="card-title">Benefactor Harmann</h5>
+		  <p>$200,000</p>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+		  <img src="assets/sedan/benevorsch.png" class="card-img-top mb-3" alt="Volt" />
+		  <h5 class="card-title">Benefactor Vorsclaghammer</h5>
+		  <p>$55,000</p>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+		  <img src="assets/coupe/enusparar.png" class="card-img-top mb-3" alt="Arrow" />
+		  <h5 class="card-title">Enus Paragon R</h5>
+		  <p>$100,000</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="container py-5">
+	<h2 class="text-center mb-4">About Us</h2>
+	<p class="text-center">
+	  Benefactor is Los Santos' premier luxury and performance car dealership in Los Santos.
+	  With a passion for excellence and community, we offer a curated selection of top-tier vehicles.
+	</p>
+  </div>
+
+ <div class="container py-5">	  
+	<h2 class="text-center mb-4">Upcoming Events</h2>
+	<div class="row">
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+			<img src="assets/benefactor3.svg" class="card-img-top mb-3" alt="" />
+		  <h5 class="card-title">TBA</h5>
+		  <p>Date:</p>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+		  <img src="assets/benefactor3.svg" class="card-img-top mb-3" alt="" />
+		  <h5 class="card-title">TBA</h5>
+		  <p>Date:</p>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="card vehicle-card text-center p-3">
+		  <img src="assets/benefactor3.svg" class="card-img-top mb-3" alt="" />
+		  <h5 class="card-title">TBA</h5>
+		  <p>Date:</p>
+		</div>
+	  </div>
+	</div>
+  </div>
+		
+	<div class="container py-5 col-sm-3" id="contact">
+		<div class="row text-center">
+			<h2>Contact Us</h2>
+			<p>Clicking below will lead you to the Benefactor Guest Service form. Please fill this out, and we will contact you as soon as possible!</p>
+      		<a href="https://forms.gle/CRYUQny1QFFQ6zi76" class="list-item">Guest Service Form</a>
+		</div>
+  	</div>
+		
+  <div class="container py-5">	  
+	<h2 class="text-center mb-4">Our Sponsors</h2>
+	<div class="row">
+	  <div class="col-md-4">
+		<div class="p-3">
+		  <img src="assets/bestiesbistro.png" class="card-img-top mb-3" alt="" />
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="p-3">
+<!--		  <img src="assets/bhcc.png" class="card-img-top mb-3" alt="" />-->
+		</div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="p-3">
+		  <img src="assets/bhcc.png" class="card-img-top mb-3" alt="" />
+		</div>
+	  </div>
+	</div>
+  </div>
+
+	<a class="copyright">Design: Johnny Esco</a><br>
+
+  </main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+	
+	<script>
+	  document.addEventListener("DOMContentLoaded", () => {
+		document.body.classList.add("fade-init");
+
+
+		requestAnimationFrame(() => {
+		  requestAnimationFrame(() => {
+			document.body.classList.add("fade-in");
+		  });
+		});
+	  });
+
+
+	  window.addEventListener("beforeunload", () => {
+		document.body.classList.remove("fade-in", "fade-init");
+	  });
+	</script>
+	
+	<script>
+	  window.addEventListener('load', () => {
+		setTimeout(() => {
+		  document.body.classList.add('loaded');
+		}, 3000);
+	  });
+	</script>
+	
+
+
+
+</body>
+</html>

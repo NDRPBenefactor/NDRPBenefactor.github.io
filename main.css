@@ -1,0 +1,641 @@
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('assets/bodybg.png');
+  background-color: #121212;
+  color: white;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+  overflow-x: hidden;
+}
+
+body.fade-init {
+  opacity: 0;
+}
+
+body.fade-in {
+  opacity: 1;
+  transition: opacity 0.75s ease-in;
+}
+
+.container {
+	animation: expand .8s ease forwards;
+	transition: all .8s ease;
+}
+
+.navbar, .dropdown-menu {
+  background-color: #1f1f1f;
+}
+
+.nav-link:hover, .navbar-brand:hover, .copyright:hover {
+	font-weight: 600;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75); /* subtle glow */
+	transition: text-shadow 0.3s ease;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: rgba(33,37,41,1.0);
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75); /* subtle glow */
+  transition: text-shadow 0.3s ease;
+}
+
+.benelogo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.content {
+  display: none;
+  padding: 1% 0;
+  background-color: rgba(33,37,41,1);
+}
+
+.list-item {
+  cursor: pointer;
+  padding: 1% 0;
+  background-color: rgba(33,37,41,0.6);
+  text-align: center;
+  border-radius: 10px;
+  margin: 1% 0;
+}
+
+a:hover {
+  font-weight: 600;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75); /* subtle glow */
+  transition: text-shadow 0.3s ease;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transition: border-width 150ms ease-in-out;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.arrow-cat {
+  display: none;
+}
+
+.arrow:hover, .arrow-cat:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+#full {
+  height: 100vh;
+  background-color: #256347;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-bg img {
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+/*  margin-bottom: vh;*/
+  border-bottom: 1vh solid #444;
+}
+
+.hero-category, .hero-text, .category-text {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  animation: expand .8s ease forwards;
+  transition: all .8s ease;
+}
+
+.hero-category {
+  font-size: 3rem;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+.category-text {
+  font-size: 6vw;
+  z-index: 1;
+}
+
+
+
+.hero-image, .hero-image-category {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  max-width: 100%;
+  animation: expand .8s ease forwards;
+  transition: all .8s ease;
+}
+
+.hero-image img,
+  .hero-image-category img {
+    height: 20%;
+    width: 20%;
+    margin: auto;
+    display: block;
+  }
+
+a, u {
+  color: white;
+  text-decoration: none;
+}
+
+.colorfill {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#000000;
+}
+
+
+.card-title, .card-img-top, p, h5 {
+  color: white;
+  z-index: 1;
+}
+
+.text-center {
+  background-color: rgba(33,37,41,0);
+  color: white;
+}
+
+.p-3 img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-3 img:hover {
+  transform: scale(1.1);
+}
+
+.p-4 {
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(33,37,41,0.6);
+}
+
+.category-card, .vehicle-card {
+  background-color: rgba(33,37,41,0.6);
+  border: none;
+}
+.vehicle-card {
+  overflow: hidden;
+}
+
+.vehicle-card img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vehicle-card img:hover {
+  transform: scale(1.4);
+}
+#sport-classic {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/sport-classic.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+#van {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/van.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#coupe {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/coupe.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#off-road {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/off-road.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#sedan {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/sedan.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#sport {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/sport.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#super {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/super.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#suv {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/suv.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+#compact {
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background-image: url("assets/buttons/compact.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: block;
+	transition: background-size 0.3s ease;
+}
+
+/* Overlay dims the background image */
+#sport-classic::before,#van::before, #coupe::before, #off-road::before, #sedan::before, #sport::before, #super::before, #suv::before, #compact::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: background-color 0.3s ease;
+	z-index: 1;
+}
+
+/* Text stays above the overlay */
+#sport-classic .button-text, #van .button-text, #coupe .button-text, #off-road .button-text, #sport .button-text, #super .button-text, #suv .button-text, #compact .button-text, #sedan .button-text {
+	position: relative;
+	z-index: 2;
+	font-weight: 600;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75); /* subtle glow */
+	transition: text-shadow 0.3s ease;
+}
+
+/* On hover: fade the overlay + zoom image + boost text glow */
+#sport-classic:hover::before, #van:hover::before, #coupe:hover::before, #off-road:hover::before, #sedan:hover::before, #sport:hover::before, #super:hover::before, #suv:hover::before, #compact:hover::before {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#sport-classic:hover, #van:hover, #coupe:hover, #off-road:hover, #sport:hover, #super:hover, #sedan:hover, #suv:hover, #compact:hover {
+	background-size: 110%; /* zoom-in effect */
+}
+
+#sport-classic:hover .button-text, #van:hover .button-text, #coupe:hover .button-text, #off-road:hover .button-text,
+#sedan:hover .button-text, #sport:hover .button-text, #super:hover .button-text, #suv:hover .button-text, #compact:hover .button-text {
+	text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9); /* brighter glow */
+}
+
+.category-card:hover, .vehicle-card:hover, .list-item:hover {
+  background-color: rgba(33,37,41,1.0);
+}
+
+.form-control {
+  background-color: rgba(255,255,255,0.45);
+}
+
+.copyright {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	color: rgba(128, 128, 128, 0.75);
+	font-size: 0.8em;
+	cursor: default;
+}
+
+/* Loading screen */
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/load.jpg') center center / cover no-repeat;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+body.loaded #loading-screen {
+  opacity: 0;
+  pointer-events: none;
+}
+
+    .logo-icon {
+      width: 150px;
+      height: 150px;
+      background: url('assets/benefactor.svg') center center / contain no-repeat;
+      margin-bottom: 20px;
+    }
+
+    .loading-bar {
+      width: 200px;
+      height: 6px;
+      background-color: #333;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .loading-bar-inner {
+      width: 0;
+      height: 100%;
+      background-color: #fff;
+      animation: loadProgress 3s linear forwards;
+    }
+
+    @keyframes loadProgress {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+main {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body.loaded main {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .category-text {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .benelogo {
+    max-width: 60px;
+  }
+  .p-4 {
+    font-size: 1rem;
+  }
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transition: border-width 150ms ease-in-out;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+}
+
+@media screen and (max-width: 480px) {
+  .arrow {
+	box-sizing: border-box;
+	height: 5vw;
+	width: 5vw;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+    transition: border-width 150ms ease-in-out;
+	position: absolute;
+	bottom: 25vh;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+  }
+  .arrow-cat {
+    display: none;
+  }
+  #categories {
+    padding: 0 5%;
+  }
+  .hero-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .category-text {
+    font-size: 2.5rem;
+  }
+  .hero {
+	background: url("assets/dealer.png");
+    background-size: 100%;
+	background-size: cover;
+	background-position: center;
+    height: 75vh;
+  }
+  .hero-bg img {
+    display: none;
+    height: 175vw;
+  }
+	
+  .hero-image img,
+  .hero-image-category img {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  .p-4 {
+    font-size: 4vw;
+  }
+  .benelogo {
+    max-width: 10%;
+  }
+  .col-md-3, .col-md-4 {
+    padding: 2%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+	
+  .hero {
+	  height: 85vh;
+
+	}
+  .hero-text {
+    font-size: 4rem;
+  }
+  .category-text {
+    font-size: 7rem;
+  }
+  .p-4 {
+    font-size: 0.9rem;
+  }
+
+  .benelogo {
+    max-width: 60px;
+  }
+  .arrow {
+	bottom: 25vh;
+
+  }
+	
+  .col-md-3, .col-md-4 {
+    padding: 0.5%;
+  }
+}

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benefactor | Sport</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b5a3e2d585.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark shadow" id="topofpage">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Benefactor</a><img class="benelogo" src="assets/benefactor.svg" alt="" />  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="coupe.html">Coupe</a></li>
+              <li><a class="dropdown-item" href="off-road.html">Off-Road</a></li>
+              <li><a class="dropdown-item" href="sedan.html">Sedan</a></li>
+              <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+              <li><a class="dropdown-item" href="sport-classic.html">Sport Classic</a></li>
+              <li><a class="dropdown-item" href="super.html">Super</a></li>
+              <li><a class="dropdown-item" href="suv.html">SUV</a></li>
+              <li><a class="dropdown-item" href="compact.html">Compact</a></li>
+              <li><a class="dropdown-item" href="van.html">Van</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+			<a class="nav-link" href="employees.html">Employees</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  	<div class="hero-category">
+	  <div class="category-text">Sport</div>
+		  <a data-scroll href="#categories">
+			<div class="arrow-cat"></div>
+		  </a>
+	</div>
+	
+
+  <div class="container py-5 col-sm-3" id="categories">
+<!--    <h2 class="text-center mb-4"></h2>-->
+    <div class="row text-center">
+      	<div class="list-item" onclick="toggleContent('item1')">Grotti Bestia GTS<br>$175,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item1" class="content">2 Seats | 3 Doors | 177.78 lbs<img src="assets/sport/grottibestia.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item2')">Grotti Carbonizzare<br>$200,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item2" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/grotticarbonia.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item3')">Pfister Comet SR<br>$230,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item3" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/cometsr.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item4')">Invetero Coquette D10<br>$185,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item4" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/coqud10.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item5')">Lampadati Corsita<br>$210,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item5" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/corsita.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item6')">Benefactor Feltzer<br>$88,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item6" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/feltzer.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item7')">Pfister Comet S2R<br>$275,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item7" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/cometstr.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item8')">Comet S2R Cabrio<br>$275,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item8" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/cometstrca.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item9')">Dewbauchee Solace<br>$250,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item9" class="content">2 Seats | 2 Doors | 177.78 lbs<img src="assets/sport/dewbsolac.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item10')">Solace Vitesse<br>$250,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item10" class="content">2 Seats | 2 Doors | 177.78 lbs<img src="assets/sport/solacevite.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item11')">Dinka Jester<br>$180,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item11" class="content">2 Seats | 2 Doors | 44.44 lbs<img src="assets/sport/dinkajester.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item12')">Dewbauchee Massacro<br>$200,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item12" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/massacro.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item13')">Vysser Neo<br>$135,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item13" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/vysserneo.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item14')">Ocelot Pariah<br>$$300,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item14" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/ocelotpariah.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item15')">Benefactor Schlagen GT<br>$195,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item15" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/schlaggt.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item16')">Benefactor Schwartzer<br>$32,500<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item16" class="content">2 Seats | 2 Doors | 177.78 lbs<img src="assets/sport/schwartzer.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item17')">Dewbauchee Seven-70<br>$350,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item17" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/seven70.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item18')">Dewbauchee Specter<br>$220,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item18" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/specter.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item19')">Grotti Stinger TT<br>$350,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item19" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/grottistingertt.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item20')">Dewbauchee Super GTS<br>$300,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item20" class="content">2 Seats | 2 Doors | 177.78 lbs<img src="assets/sport/supergts.png" class="card-img-top" alt="" /></div>
+
+		<div class="list-item" onclick="toggleContent('item21')">Benefactor Surano<br>$70,000<br><i class="fa-solid fa-angle-down"></i></div>
+		<div id="item21" class="content">2 Seats | 2 Doors | 155.56 lbs<img src="assets/sport/surrano.png" class="card-img-top" alt="" /></div>
+    </div>
+  </div>
+	
+	<div class="container py-5 col-sm-3">
+		<div class="row text-center">
+      		<a href="#topofpage" class="list-item">Back to Top</a>
+		</div>
+  	</div>
+	
+	<a class="copyright">Design: Johnny Esco</a><br>
+  
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+        function toggleContent(id) {
+      var content = document.getElementById(id);
+      if (content) {
+        content.style.display = (content.style.display === "none" || getComputedStyle(content).display === "none") ? "block" : "none";
+      }
+    }
+    </script>
+	<script>
+	  document.addEventListener("DOMContentLoaded", () => {
+		document.body.classList.add("fade-init");
+
+		// Allow style to apply first
+		requestAnimationFrame(() => {
+		  requestAnimationFrame(() => {
+			document.body.classList.add("fade-in");
+		  });
+		});
+	  });
+
+	  // Optional: Clear classes on unload to prevent cache issues
+	  window.addEventListener("beforeunload", () => {
+		document.body.classList.remove("fade-in", "fade-init");
+	  });
+	</script>
+</body>
+</html>
